@@ -3,804 +3,586 @@
  * Keys are icon file basenames (without folder_ prefix)
  */
 
-type FolderIcons = Record<string, {
-  folderNames?: Array<string>
-}>
+type FolderIcons = Record<
+  string,
+  {
+    folderNames?: Array<string>;
+  }
+>;
 
 // @keep-sorted
 const folderIcons: FolderIcons = {
-  'admin': {
+  admin: {
     folderNames: [
-      'admin',
-      'admins',
-      'manager',
-      'managers',
-      'moderator',
-      'moderators',
+      "admin",
+      "admins",
+      "manager",
+      "managers",
+      "moderator",
+      "moderators",
     ],
   },
-  'android': {
-    folderNames: ['android'],
+  android: {
+    folderNames: ["android"],
   },
-  'animation': {
-    folderNames: [
-      'anim',
-      'anims',
-      'animation',
-      'animations',
-      'animated',
-    ],
+  animation: {
+    folderNames: ["anim", "anims", "animation", "animations", "animated"],
   },
-  'api': {
-    folderNames: [
-      'api',
-      'apis',
-      'restapi',
-    ],
+  api: {
+    folderNames: ["api", "apis", "restapi"],
   },
-  'app': {
-    folderNames: [
-      'app',
-      'apps',
-    ],
+
+  app: {
+    folderNames: ["app", "apps"],
   },
-  'assets': {
-    folderNames: [
-      'asset',
-      'assets',
-    ],
+  assets: {
+    folderNames: ["asset", "assets"],
   },
-  'audio': {
-    folderNames: [
-      'aud',
-      'auds',
-      'audio',
-      'audios',
-      'music',
-      'sound',
-      'sounds',
-    ],
+  audio: {
+    folderNames: ["aud", "auds", "audio", "audios", "music", "sound", "sounds"],
   },
-  'audit': {
-    folderNames: [
-      'audit',
-      'audits',
-    ],
+  audit: {
+    folderNames: ["audit", "audits"],
   },
-  'aws': {
-    folderNames: [
-      'aws',
-      '.aws',
-    ],
+  aws: {
+    folderNames: ["aws", ".aws"],
   },
-  'azure-devops': {
-    folderNames: ['.azure-devops', '.azuredevops'],
+  "azure-devops": {
+    folderNames: [".azure-devops", ".azuredevops"],
   },
-  'azure-pipelines': {
-    folderNames: ['.azure-pipelines'],
+  "azure-pipelines": {
+    folderNames: [".azure-pipelines"],
   },
-  'benchmark': {
+  benchmark: {
     folderNames: [
-      'benchmark',
-      'benchmarks',
-      'bench',
-      'benches',
-      'performance',
-      'measure',
-      'measures',
-      'measurement',
+      "benchmark",
+      "benchmarks",
+      "bench",
+      "benches",
+      "performance",
+      "measure",
+      "measures",
+      "measurement",
     ],
   },
-  'caddy': {
-    folderNames: [
-      '.caddy',
-      '.caddyfiles',
-      'caddy',
-      'caddyfiles',
-    ],
+  caddy: {
+    folderNames: [".caddy", ".caddyfiles", "caddy", "caddyfiles"],
   },
-  'cargo': {
-    folderNames: [
-      '.cargo',
-    ],
+  cargo: {
+    folderNames: [".cargo"],
   },
-  'circle-ci': {
-    folderNames: ['.circleci'],
+  "circle-ci": {
+    folderNames: [".circleci"],
   },
-  'client': {
-    folderNames: [
-      'client',
-      'clients',
-      'frontend',
-      'frontends',
-      'pwa',
-    ],
+  client: {
+    folderNames: ["client", "clients", "frontend", "frontends", "pwa"],
   },
-  'cloud': {
-    folderNames: ['cloud'],
+  cloud: {
+    folderNames: ["cloud"],
   },
-  'command': {
-    folderNames: [
-      'command',
-      'commands',
-      'cmd',
-      'cli',
-      'clis',
-    ],
+  command: {
+    folderNames: ["command", "commands", "cmd", "cli", "clis"],
   },
-  'components': {
-    folderNames: [
-      'components',
-      'widget',
-      'widgets',
-      'fragments',
-    ],
+  components: {
+    folderNames: ["components", "widget", "widgets", "fragments"],
   },
-  'composables': {
-    folderNames: [
-      'composable',
-      'composables',
-    ],
+  composables: {
+    folderNames: ["composable", "composables"],
   },
-  'config': {
+  config: {
     folderNames: [
-      'cfg',
-      'cfgs',
-      'conf',
-      'confs',
-      '.config',
-      'config',
-      'configs',
-      'configuration',
-      'configurations',
-      'setting',
-      '.setting',
-      'settings',
-      '.settings',
-      'META-INF',
-      'option',
-      'options',
+      "cfg",
+      "cfgs",
+      "conf",
+      "confs",
+      ".config",
+      "config",
+      "configs",
+      "configuration",
+      "configurations",
+      "setting",
+      ".setting",
+      "settings",
+      ".settings",
+      "META-INF",
+      "option",
+      "options",
     ],
   },
-  'connection': {
-    folderNames: [
-      'connection',
-      'connections',
-      'integration',
-      'integrations',
-    ],
+  connection: {
+    folderNames: ["connection", "connections", "integration", "integrations"],
   },
-  'constant': {
-    folderNames: [
-      'constant',
-      'constants',
-    ],
+  constant: {
+    folderNames: ["constant", "constants"],
   },
-  'content': {
-    folderNames: [
-      'content',
-      'contents',
-    ],
+  content: {
+    folderNames: ["content", "contents"],
   },
-  'controllers': {
+  controllers: {
     folderNames: [
-      'controller',
-      'controllers',
-      'service',
-      'services',
-      'provider',
-      'providers',
-      'handler',
-      'handlers',
+      "controller",
+      "controllers",
+      "service",
+      "services",
+      "provider",
+      "providers",
+      "handler",
+      "handlers",
     ],
   },
-  'core': {
-    folderNames: ['core'],
+  core: {
+    folderNames: ["core"],
   },
-  'coverage': {
+  coverage: {
     folderNames: [
-      'coverage',
-      '.nyc-output',
-      '.nyc_output',
-      'e2e',
-      'it',
-      'integration-test',
-      'integration-tests',
-      '__integration-test__',
-      '__integration-tests__',
+      "coverage",
+      ".nyc-output",
+      ".nyc_output",
+      "e2e",
+      "it",
+      "integration-test",
+      "integration-tests",
+      "__integration-test__",
+      "__integration-tests__",
     ],
   },
-  'cursor': {
-    folderNames: ['.cursor'],
+  cursor: {
+    folderNames: [".cursor"],
   },
-  'cypress': {
-    folderNames: [
-      'cypress',
-      '.cypress',
-    ],
+  cypress: {
+    folderNames: ["cypress", ".cypress"],
   },
-  'database': {
-    folderNames: [
-      'db',
-      'database',
-      'databases',
-      'sql',
-      'data',
-      '_data',
-    ],
+  database: {
+    folderNames: ["db", "database", "databases", "sql", "data", "_data"],
   },
-  'debug': {
-    folderNames: [
-      'debug',
-      'debugging',
-    ],
+  debug: {
+    folderNames: ["debug", "debugging"],
   },
-  'devcontainer': {
-    folderNames: ['.devcontainer'],
+  devcontainer: {
+    folderNames: [".devcontainer"],
   },
-  'direnv': {
-    folderNames: ['.direnv'],
+  direnv: {
+    folderNames: [".direnv"],
   },
-  'dist': {
+  dist: {
     folderNames: [
-      'dist',
-      'dist-newstyle',
-      'out',
-      'build',
-      'release',
-      'bin',
-      '.output',
+      "dist",
+      "dist-newstyle",
+      "out",
+      "build",
+      "release",
+      "bin",
+      ".output",
     ],
   },
-  'docker': {
-    folderNames: [
-      'docker',
-      'dockerfiles',
-      '.docker',
-    ],
+  docker: {
+    folderNames: ["docker", "dockerfiles", ".docker"],
   },
-  'docs': {
+  docs: {
     folderNames: [
-      '_post',
-      '_posts',
-      'doc',
-      'docs',
-      'document',
-      'documents',
-      'documentation',
-      'post',
-      'posts',
-      'article',
-      'articles',
+      "_post",
+      "_posts",
+      "doc",
+      "docs",
+      "document",
+      "documents",
+      "documentation",
+      "post",
+      "posts",
+      "article",
+      "articles",
     ],
   },
-  'download': {
-    folderNames: [
-      'downloads',
-      'download',
+  download: {
+    folderNames: ["downloads", "download"],
+  },
+  "drizzle-orm": {
+    folderNames: ["drizzle"],
+  },
+  examples: {
+    folderNames: [
+      "demo",
+      "demos",
+      "example",
+      "examples",
+      "sample",
+      "samples",
+      "sample-data",
     ],
+  },
+  fastlane: {
+    folderNames: ["fastlane", ".fastlane"],
   },
-  'drizzle-orm': {
-    folderNames: ['drizzle'],
+  firebase: {
+    folderNames: ["firebase", ".firebase"],
   },
-  'examples': {
-    folderNames: [
-      'demo',
-      'demos',
-      'example',
-      'examples',
-      'sample',
-      'samples',
-      'sample-data',
-    ],
+  fonts: {
+    folderNames: ["font", "fonts"],
   },
-  'fastlane': {
-    folderNames: ['fastlane', '.fastlane'],
-  },
-  'firebase': {
-    folderNames: [
-      'firebase',
-      '.firebase',
-    ],
+  forgejo: {
+    folderNames: [".forgejo"],
   },
-  'fonts': {
+  functions: {
     folderNames: [
-      'font',
-      'fonts',
+      "func",
+      "funcs",
+      "function",
+      "functions",
+      "lambda",
+      "lambdas",
+      "logic",
+      "math",
+      "maths",
+      "calc",
+      "calcs",
+      "calculation",
+      "calculations",
     ],
   },
-  'forgejo': {
-    folderNames: ['.forgejo'],
+  fvm: {
+    folderNames: [".fvm"],
+  },
+  git: {
+    folderNames: [
+      ".git",
+      "patches",
+      "githooks",
+      ".githooks",
+      "submodules",
+      ".submodules",
+    ],
+  },
+  github: {
+    folderNames: [".github", "github"],
+  },
+  gitlab: {
+    folderNames: [".gitlab"],
+  },
+  gradle: {
+    folderNames: ["gradle", ".gradle"],
   },
-  'functions': {
-    folderNames: [
-      'func',
-      'funcs',
-      'function',
-      'functions',
-      'lambda',
-      'lambdas',
-      'logic',
-      'math',
-      'maths',
-      'calc',
-      'calcs',
-      'calculation',
-      'calculations',
-    ],
+  graphql: {
+    folderNames: ["graphql", "gql"],
   },
-  'fvm': {
-    folderNames: ['.fvm'],
+  hooks: {
+    folderNames: ["hook", "hooks", "trigger", "triggers"],
   },
-  'git': {
-    folderNames: [
-      '.git',
-      'patches',
-      'githooks',
-      '.githooks',
-      'submodules',
-      '.submodules',
-    ],
+  husky: {
+    folderNames: ["husky", ".husky"],
   },
-  'github': {
+  images: {
     folderNames: [
-      '.github',
-      'github',
+      "_images",
+      "_image",
+      "_imgs",
+      "_img",
+      "images",
+      "image",
+      "imgs",
+      "img",
+      "icons",
+      "icon",
+      "icos",
+      "ico",
+      "figures",
+      "figure",
+      "figs",
+      "fig",
+      "screenshot",
+      "screenshots",
+      "screengrab",
+      "screengrabs",
+      "pic",
+      "pics",
+      "picture",
+      "pictures",
+      "photo",
+      "photos",
+      "photograph",
+      "photographs",
     ],
-  },
-  'gitlab': {
-    folderNames: ['.gitlab'],
   },
-  'gradle': {
-    folderNames: ['gradle', '.gradle'],
+  include: {
+    folderNames: ["include", "includes"],
   },
-  'graphql': {
-    folderNames: ['graphql', 'gql'],
+  intellij: {
+    folderNames: [".idea"],
   },
-  'hooks': {
-    folderNames: ['hook', 'hooks', 'trigger', 'triggers'],
+  javascript: {
+    folderNames: ["js", "javascript"],
   },
-  'husky': {
+  kubernetes: {
+    folderNames: ["kubernetes", ".kubernetes", "k8s", ".k8s"],
+  },
+  layouts: {
+    folderNames: ["layout", "layouts", "_layouts"],
+  },
+  lib: {
     folderNames: [
-      'husky',
-      '.husky',
+      "lib",
+      "libs",
+      "library",
+      "libraries",
+      ".lib",
+      ".libs",
+      ".library",
+      ".libraries",
     ],
   },
-  'images': {
+  linux: {
+    folderNames: ["linux"],
+  },
+  locales: {
     folderNames: [
-      '_images',
-      '_image',
-      '_imgs',
-      '_img',
-      'images',
-      'image',
-      'imgs',
-      'img',
-      'icons',
-      'icon',
-      'icos',
-      'ico',
-      'figures',
-      'figure',
-      'figs',
-      'fig',
-      'screenshot',
-      'screenshots',
-      'screengrab',
-      'screengrabs',
-      'pic',
-      'pics',
-      'picture',
-      'pictures',
-      'photo',
-      'photos',
-      'photograph',
-      'photographs',
+      "i18n",
+      "internationalization",
+      "lang",
+      "langs",
+      "language",
+      "languages",
+      "locale",
+      "locales",
+      "l10n",
+      "localization",
+      "translation",
+      "translate",
+      "translations",
+      ".tx",
     ],
   },
-  'include': {
-    folderNames: ['include', 'includes'],
+  luau: {
+    folderNames: ["luau_packages"],
   },
-  'intellij': {
-    folderNames: ['.idea'],
+  lune: {
+    folderNames: ["lune_packages"],
   },
-  'javascript': {
-    folderNames: ['js', 'javascript'],
+  macos: {
+    folderNames: ["mac", "macos"],
   },
-  'kubernetes': {
-    folderNames: [
-      'kubernetes',
-      '.kubernetes',
-      'k8s',
-      '.k8s',
-    ],
+  messages: {
+    folderNames: ["message", "messages"],
   },
-  'layouts': {
-    folderNames: [
-      'layout',
-      'layouts',
-      '_layouts',
-    ],
+  middleware: {
+    folderNames: ["middleware", "middlewares"],
   },
-  'lib': {
+  mocks: {
     folderNames: [
-      'lib',
-      'libs',
-      'library',
-      'libraries',
-      '.lib',
-      '.libs',
-      '.library',
-      '.libraries',
+      "_draft",
+      "_drafts",
+      "mock",
+      "mocks",
+      "fixture",
+      "fixtures",
+      "draft",
+      "drafts",
+      "concept",
+      "concepts",
+      "sketch",
+      "sketches",
     ],
   },
-  'linux': {
-    folderNames: ['linux'],
+  moonrepo: {
+    folderNames: [".moon"],
   },
-  'locales': {
-    folderNames: [
-      'i18n',
-      'internationalization',
-      'lang',
-      'langs',
-      'language',
-      'languages',
-      'locale',
-      'locales',
-      'l10n',
-      'localization',
-      'translation',
-      'translate',
-      'translations',
-      '.tx',
-    ],
+  next: {
+    folderNames: [".next"],
   },
-  'luau': {
-    folderNames: ['luau_packages'],
+  nix: {
+    folderNames: ["nix"],
   },
-  'lune': {
-    folderNames: ['lune_packages'],
+  node: {
+    folderNames: ["node_modules"],
   },
-  'macos': {
-    folderNames: ['mac', 'macos'],
+  nuxt: {
+    folderNames: ["nuxt", ".nuxt"],
   },
-  'messages': {
-    folderNames: ['message', 'messages'],
+  packages: {
+    folderNames: ["package", "packages", "pkg", "pkgs", "crate", "crates"],
   },
-  'middleware': {
-    folderNames: [
-      'middleware',
-      'middlewares',
-    ],
+  pesde: {
+    folderNames: [".pesde", "pesde"],
   },
-  'mocks': {
+  plugins: {
     folderNames: [
-      '_draft',
-      '_drafts',
-      'mock',
-      'mocks',
-      'fixture',
-      'fixtures',
-      'draft',
-      'drafts',
-      'concept',
-      'concepts',
-      'sketch',
-      'sketches',
+      "plugin",
+      "plugins",
+      "_plugins",
+      "mod",
+      "mods",
+      "modding",
+      "extension",
+      "extensions",
+      "addon",
+      "addons",
+      "module",
+      "modules",
     ],
-  },
-  'moonrepo': {
-    folderNames: ['.moon'],
   },
-  'next': {
-    folderNames: ['.next'],
+  "pre-commit": {
+    folderNames: ["pre-commit-channel"],
   },
-  'nix': {
-    folderNames: ['nix'],
+  prisma: {
+    folderNames: ["prisma"],
   },
-  'node': {
-    folderNames: ['node_modules'],
+  private: {
+    folderNames: ["private"],
   },
-  'nuxt': {
-    folderNames: [
-      'nuxt',
-      '.nuxt',
-    ],
-  },
-  'packages': {
-    folderNames: [
-      'package',
-      'packages',
-      'pkg',
-      'pkgs',
-      'crate',
-      'crates',
-    ],
+  proto: {
+    folderNames: ["protobuf", "protobufs", "proto", "protos"],
   },
-  'pesde': {
-    folderNames: ['.pesde', 'pesde'],
-  },
-  'plugins': {
+  public: {
     folderNames: [
-      'plugin',
-      'plugins',
-      '_plugins',
-      'mod',
-      'mods',
-      'modding',
-      'extension',
-      'extensions',
-      'addon',
-      'addons',
-      'module',
-      'modules',
+      "_site",
+      "public",
+      "www",
+      "wwwroot",
+      "web",
+      "website",
+      "site",
+      "browser",
+      "browsers",
     ],
-  },
-  'pre-commit': {
-    folderNames: ['pre-commit-channel'],
   },
-  'prisma': {
-    folderNames: ['prisma'],
+  queue: {
+    folderNames: ["queue", "queues", "bull", "mq"],
   },
-  'private': {
-    folderNames: ['private'],
+  redux: {
+    folderNames: ["redux"],
   },
-  'proto': {
-    folderNames: [
-      'protobuf',
-      'protobufs',
-      'proto',
-      'protos',
-    ],
-  },
-  'public': {
-    folderNames: [
-      '_site',
-      'public',
-      'www',
-      'wwwroot',
-      'web',
-      'website',
-      'site',
-      'browser',
-      'browsers',
-    ],
-  },
-  'queue': {
-    folderNames: [
-      'queue',
-      'queues',
-      'bull',
-      'mq',
-    ],
+  renovate: {
+    folderNames: [".renovate", "renovate"],
   },
-  'redux': {
-    folderNames: ['redux'],
+  roblox: {
+    folderNames: ["roblox_packages", "roblox_server_packages"],
   },
-  'renovate': {
-    folderNames: [
-      '.renovate',
-      'renovate',
-    ],
+  routes: {
+    folderNames: ["routes", "router", "routers"],
   },
-  'roblox': {
-    folderNames: [
-      'roblox_packages',
-      'roblox_server_packages',
-    ],
+  sass: {
+    folderNames: ["sass", "_sass", "scss", "_scss"],
   },
-  'routes': {
-    folderNames: [
-      'routes',
-      'router',
-      'routers',
-    ],
+  scripts: {
+    folderNames: ["script", "scripts", "scripting"],
   },
-  'sass': {
-    folderNames: [
-      'sass',
-      '_sass',
-      'scss',
-      '_scss',
-    ],
+  security: {
+    folderNames: ["security"],
   },
-  'scripts': {
-    folderNames: [
-      'script',
-      'scripts',
-      'scripting',
-    ],
+  server: {
+    folderNames: ["server", "servers", "backend"],
   },
-  'security': {
-    folderNames: ['security'],
+  shared: {
+    folderNames: ["share", "shared"],
   },
-  'server': {
-    folderNames: [
-      'server',
-      'servers',
-      'backend',
-    ],
+  src: {
+    folderNames: ["src", "srcs", "source", "sources", "code"],
   },
-  'shared': {
-    folderNames: [
-      'share',
-      'shared',
-    ],
+  store: {
+    folderNames: ["store", "stores"],
   },
-  'src': {
-    folderNames: [
-      'src',
-      'srcs',
-      'source',
-      'sources',
-      'code',
-    ],
+  storybook: {
+    folderNames: [".storybook", "storybook", "stories", "__stories__"],
   },
-  'storybook': {
-    folderNames: [
-      '.storybook',
-      'storybook',
-      'stories',
-      '__stories__',
-    ],
+  styles: {
+    folderNames: ["css", "stylesheet", "stylesheets", "style", "styles"],
   },
-  'styles': {
-    folderNames: [
-      'css',
-      'stylesheet',
-      'stylesheets',
-      'style',
-      'styles',
-    ],
+  svg: {
+    folderNames: ["svg", "svgs"],
   },
-  'svg': {
-    folderNames: [
-      'svg',
-      'svgs',
-    ],
+  tauri: {
+    folderNames: ["src-tauri"],
   },
-  'tauri': {
-    folderNames: ['src-tauri'],
+  temp: {
+    folderNames: ["temp", ".temp", "tmp", ".tmp", "cached", "cache", ".cache"],
   },
-  'temp': {
-    folderNames: [
-      'temp',
-      '.temp',
-      'tmp',
-      '.tmp',
-      'cached',
-      'cache',
-      '.cache',
-    ],
+  templates: {
+    folderNames: ["template", "templates"],
   },
-  'templates': {
+  tests: {
     folderNames: [
-      'template',
-      'templates',
+      "test",
+      "tests",
+      "testing",
+      "__tests__",
+      "__snapshots__",
+      "__mocks__",
+      "__fixtures__",
+      "__test__",
+      "spec",
+      "specs",
     ],
   },
-  'tests': {
-    folderNames: [
-      'test',
-      'tests',
-      'testing',
-      '__tests__',
-      '__snapshots__',
-      '__mocks__',
-      '__fixtures__',
-      '__test__',
-      'spec',
-      'specs',
-    ],
+  themes: {
+    folderNames: ["theme", "themes"],
   },
-  'themes': {
-    folderNames: [
-      'theme',
-      'themes',
-    ],
+  thunk: {
+    folderNames: ["thunk", "thunks"],
   },
-  'turbo': {
-    folderNames: [
-      '.turbo',
-    ],
+  turbo: {
+    folderNames: [".turbo"],
   },
-  'types': {
-    folderNames: [
-      'typings',
-      '@types',
-      'types',
-    ],
+  types: {
+    folderNames: ["typings", "@types", "types"],
   },
-  'upload': {
-    folderNames: [
-      'uploads',
-      'upload',
-    ],
+  upload: {
+    folderNames: ["uploads", "upload"],
   },
-  'utils': {
-    folderNames: [
-      'util',
-      'utils',
-      'utility',
-      'utilities',
-    ],
+  utils: {
+    folderNames: ["util", "utils", "utility", "utilities"],
   },
-  'vercel': {
-    folderNames: [
-      'vercel',
-      '.vercel',
-      'now',
-      '.now',
-    ],
+  vercel: {
+    folderNames: ["vercel", ".vercel", "now", ".now"],
   },
-  'video': {
-    folderNames: [
-      'vid',
-      'vids',
-      'video',
-      'videos',
-      'movie',
-      'movies',
-    ],
+  video: {
+    folderNames: ["vid", "vids", "video", "videos", "movie", "movies"],
   },
-  'views': {
+  views: {
     folderNames: [
-      'view',
-      'views',
-      'screen',
-      'screens',
-      'page',
-      'pages',
-      'public_html',
-      'html',
+      "view",
+      "views",
+      "screen",
+      "screens",
+      "page",
+      "pages",
+      "public_html",
+      "html",
     ],
   },
-  'vscode': {
-    folderNames: [
-      '.vscode',
-      '.vscode-test',
-    ],
+  vscode: {
+    folderNames: [".vscode", ".vscode-test"],
   },
-  'windows': {
-    folderNames: ['windows'],
+  windows: {
+    folderNames: ["windows"],
   },
-  'workflows': {
-    folderNames: [
-      'workflow',
-      'workflows',
-      'ci',
-      '.ci',
-    ],
+  workflows: {
+    folderNames: ["workflow", "workflows", "ci", ".ci"],
   },
-  'wxt': {
-    folderNames: ['.wxt'],
+  wxt: {
+    folderNames: [".wxt"],
   },
-  'xcode': {
-    folderNames: [
-      'xcodeproj',
-      'xcworkspace',
-      'xcshareddata',
-      'xcschemes',
-    ],
+  xcode: {
+    folderNames: ["xcodeproj", "xcworkspace", "xcshareddata", "xcschemes"],
   },
-  'xmake': {
-    folderNames: ['xmake', '.xmake'],
+  xmake: {
+    folderNames: ["xmake", ".xmake"],
   },
-  'yarn': {
-    folderNames: ['.yarn'],
+  yarn: {
+    folderNames: [".yarn"],
   },
-}
+};
 
 const { folderNames } = Object.entries(folderIcons).reduce(
   ({ folderNames }, [name, icon]) => ({
     folderNames: {
       ...folderNames,
-      ...icon.folderNames?.reduce((a, c) => ({ ...a, [c]: `folder_${name}` }), {}),
+      ...icon.folderNames?.reduce(
+        (a, c) => ({ ...a, [c]: `folder_${name}` }),
+        {}
+      ),
     },
   }),
   {
     folderNames: {},
-  },
-)
+  }
+);
 
-export { folderIcons, folderNames }
+export { folderIcons, folderNames };
